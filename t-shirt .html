@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akatsuki T-shirt Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #2e7d32;
+      text-align: center;
+      padding: 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      padding: 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .product {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .product img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product p {
+      margin: 0.5rem 0;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2e7d32;
+    }
+    #message {
+      text-align: center;
+      background-color: #e6ffe6;
+      color: #155724;
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 5px;
+      display: none;
+      max-width: 500px;
+    }
+    #cart, #orderForm {
+      margin-top: 2rem;
+      background-color: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    #cart ul {
+      list-style: none;
+      padding: 0;
+    }
+    #cart li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #555;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background: #2a2a2a;
+      color: white;
+    }
+    #placeOrder {
+      background-color: #43a047;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      color: white;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Akatsuki T-shirt Store</h1>
+    <p>Welcome to our online store</p>
+  </header>  <div id="message">Product added to cart!</div>  <main>
+    <h2>Our Products</h2>
+    <div class="products">
+      <!-- 6 product slots for you to edit -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Your+Tshirt+1" alt="Product 1">
+        <p>Product Name 1</p>
+        <p>₹499</p>
+        <button onclick="addToCart('Product Name 1 - ₹499')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Your+Tshirt+2" alt="Product 2">
+        <p>Product Name 2</p>
+        <p>₹599</p>
+        <button onclick="addToCart('Product Name 2 - ₹599')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Your+Tshirt+3" alt="Product 3">
+        <p>Product Name 3</p>
+        <p>₹699</p>
+        <button onclick="add
